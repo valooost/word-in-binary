@@ -7,9 +7,9 @@ def text_to_binary(text):
         for char in word:
             if char.isalpha():
                 if char.islower():
-                    pos = ord(char) - ord('a') + 1  # Uppercase 1–26
+                    pos = ord(char) - ord('a') + 1  # Lowercase 1–26
                 else:
-                    pos = ord(char) - ord('A') + 27  # Lowercase 27–52
+                    pos = ord(char) - ord('A') + 27  # Uppercase 27–52
                 binary_letters.append(bin(pos)[2:])
         
         binary_words.append(" ".join(binary_letters))
