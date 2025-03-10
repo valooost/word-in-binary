@@ -9,9 +9,9 @@ def binary_to_text(bin_str):
         for b in letters_bin:
             pos = int(b, 2)
             if 1 <= pos <= 26:
-                buchstabe = chr(pos - 1 + ord('a'))  # Kleinbuchstaben
+                buchstabe = chr(pos - 1 + ord('a'))  # Lowercase
             else:
-                buchstabe = chr(pos - 27 + ord('A'))  # Großbuchstaben
+                buchstabe = chr(pos - 27 + ord('A'))  # Uppercase
                 
             word_decoded += buchstabe
         
